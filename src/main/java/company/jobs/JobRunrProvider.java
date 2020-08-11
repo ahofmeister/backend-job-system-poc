@@ -34,13 +34,6 @@ public class JobRunrProvider {
 
   @Produces
   @Singleton
-  public JobRunrDashboardWebServer dashboardWebServer(StorageProvider storageProvider,
-      JsonMapper jsonMapper) {
-    return new JobRunrDashboardWebServer(storageProvider, jsonMapper, 1234);
-  }
-
-  @Produces
-  @Singleton
   public BackgroundJobServer backgroundJobServer(StorageProvider storageProvider,
       JobActivator jobActivator) {
     return new BackgroundJobServer(storageProvider, jobActivator);
