@@ -2,6 +2,8 @@
 
 `mvn quarkus:dev`
 
-Hit: (GET) localhost:8080/backgroundjob/start
-Hit: (GET) localhost:8080/jobs/add
-Open dashboard: localhost:1234
+`curl localhost:8080/user/add`
+
+`Open dashboard: localhost:1234`
+
+Start recurring job
